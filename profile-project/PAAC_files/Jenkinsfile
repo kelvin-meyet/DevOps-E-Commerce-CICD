@@ -67,7 +67,7 @@ pipeline {
         }
       }
        
-      stage(' F - Publish to Nexus'){
+      stage(' F - Publish to Nexus: Kelvin '){
          steps{
          // Change directory to 'profile-project' 
             dir('profile-project') {
