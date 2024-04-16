@@ -8,7 +8,7 @@ pipeline {
     stages {
       stage('Fetch Code'){
          steps {
-            git branch: 'CICD', url: 'https://github.com/techlearn-center/DevOps.git'
+            git branch: 'CICD', url: 'https://github.com/techlearn-center/DevOps.git' 
          }
       }
 
