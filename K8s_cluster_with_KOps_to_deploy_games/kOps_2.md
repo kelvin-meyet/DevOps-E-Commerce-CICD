@@ -58,7 +58,7 @@ sudo apt install unzip
 
 unzip awscliv2.zip
 
-sudo apt install aws cli
+sudo apt install awscli
 
 aws --version
 ```
@@ -79,6 +79,7 @@ Copy and paste below script in the vi editor. Make sure to save it (:wq)
 
 ```
 
+#==============================================================================================================
 #!/bin/bash
 
 # Function to get user input with a verification loop
@@ -193,7 +194,7 @@ kops update cluster $clname --yes --state=s3://$s3buck
 echo "export KOPS_STATE_STORE=s3://$s3buck" >> ~/.bashrc
 
 ```
-
+#======================================================================================================================
 Run the script to setup and configure the Kubernetes cluster.
 
 Enter the AWS keys, Availability Zone, and cluster name when prompted.
