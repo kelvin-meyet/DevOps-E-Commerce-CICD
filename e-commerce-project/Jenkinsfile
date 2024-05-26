@@ -13,7 +13,7 @@ pipeline {
     }
 
     stages{
-        stage('zero - checkout'){
+        stage('Directory - checkout'){
           steps {
             checkout scm
             dir('e-commerce-project'){
