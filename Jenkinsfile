@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        registry = "kelvinmeyet/xgb"   
+        registry = "kelvinmeyet/cicd"   
         registryCredential = 'dockerhub'
     }
 
