@@ -13,14 +13,6 @@ pipeline {
     }
 
     stages{
-        stage('Directory - checkout'){
-          steps {
-            checkout scm
-            dir('e-commerce-project'){
-              //Pipeline script within the e-commerce-project directory
-            }
-          }
-        }
 
         stage('A - BUILD'){
             steps {
