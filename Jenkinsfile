@@ -2,10 +2,11 @@ pipeline {
 
     agent any
 
-	tools {
+	/*
+  tools {
         maven "maven3"
     }
-
+  */
     environment {
         registry = "kelvinmeyet/cicd"   
         registryCredential = 'dockerhub'
