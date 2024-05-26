@@ -7,7 +7,7 @@ pipeline {
     }
 */
     environment {
-        registry = "techlearn2024/cicd"
+        registry = "kelvinmeyet/xgb"  /* techlearn2024/cicd */
         registryCredential = 'dockerhub'
     }
 
@@ -97,7 +97,7 @@ pipeline {
           }
         }
 
-        stage('Kubernetes Deploy') {
+        stage('Kubernetes Deploy - Kelvin') {
           agent {label 'KOPS'}
             steps {
               sh "helm upgrade --install --force vprofile-stack helm/vprofilecharts --set appimage=${registry}:V${BUILD_NUMBER} --namespace prod"
