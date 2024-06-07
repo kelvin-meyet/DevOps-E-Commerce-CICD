@@ -5,7 +5,7 @@ pipeline {
 	/*
   tools {
         maven "maven3"
-    }
+    }   
   */
     environment {
         registry = "kelvinmeyet/artifacts"   
